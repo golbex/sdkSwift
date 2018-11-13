@@ -54,7 +54,7 @@ public class ExampleBot:NSObject{
                     
                     let result = sdk.addOrer(type: "limit", side: currentWallet.type == "crypto" ? "sell":"buy", product: currentProduct.uid, price: price, size: size)
                     if let err = result.err{
-                        print(err)
+                        print(err.msg)
                     }
                 }
             }

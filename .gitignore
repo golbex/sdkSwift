@@ -3,3 +3,4 @@
 /Packages
 /*.xcodeproj
 Pods/*
+Examples/GolbexSDK-Example-iOS/Pods/*
