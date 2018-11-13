@@ -1,2 +1,3 @@
-# sdkSwift
-GolbexSDK
+# GolbexSwift
+
+A description of this package.
