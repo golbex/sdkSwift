@@ -4,10 +4,43 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>GolbexSwift.xcscheme_^#shared#^_</key>
+		<key>GolbexSDKExample.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>12</integer>
+		</dict>
+		<key>GolbexSwift iOS.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>11</integer>
+		</dict>
+		<key>GolbexSwift macOS.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>81929E60218F138D0044D326</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>81929E69218F138D0044D326</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>81D43044219347F200B927A7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>81D4304C219347F200B927A7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

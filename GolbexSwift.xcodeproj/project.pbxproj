@@ -7,43 +7,161 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		81929E6B218F138D0044D326 /* GolbexSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81929E61218F138D0044D326 /* GolbexSwift.framework */; };
-		81929E70218F138D0044D326 /* GolbexSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81929E6F218F138D0044D326 /* GolbexSwiftTests.swift */; };
-		81929E72218F138D0044D326 /* GolbexSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 81929E64218F138D0044D326 /* GolbexSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8137487E21994E0C000F7C5C /* GolbexError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814BA6D021994A28008C9CE2 /* GolbexError.swift */; };
+		8137487F21994E18000F7C5C /* GolbexError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814BA6D021994A28008C9CE2 /* GolbexError.swift */; };
+		814BA6D121994A28008C9CE2 /* GolbexError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814BA6D021994A28008C9CE2 /* GolbexError.swift */; };
+		81D430322193479E00B927A7 /* GolbexSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81D430292193479D00B927A7 /* GolbexSwift.framework */; };
+		81D430372193479E00B927A7 /* GolbexSwift_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D430362193479E00B927A7 /* GolbexSwift_iOSTests.swift */; };
+		81D430392193479E00B927A7 /* GolbexSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 81D4302B2193479D00B927A7 /* GolbexSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		81D4304E219347F200B927A7 /* GolbexSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81D43045219347F200B927A7 /* GolbexSwift.framework */; };
+		81D43053219347F200B927A7 /* GolbexSwift_macOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D43052219347F200B927A7 /* GolbexSwift_macOSTests.swift */; };
+		81D4305C219351CD00B927A7 /* GolbexSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 81D4302B2193479D00B927A7 /* GolbexSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		81D430D921941A2900B927A7 /* JSONDecoder+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D430D821941A2900B927A7 /* JSONDecoder+Extensions.swift */; };
+		81D430DB2194399800B927A7 /* ProductStat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D430DA2194399800B927A7 /* ProductStat.swift */; };
+		81D430DC219439E600B927A7 /* ProductStat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D430DA2194399800B927A7 /* ProductStat.swift */; };
+		81D430E421943FBC00B927A7 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D430E321943FBC00B927A7 /* main.swift */; };
+		81D430E8219541A700B927A7 /* sdk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81929E982191A1090044D326 /* sdk.swift */; };
+		81D430E9219541A800B927A7 /* sdk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81929E982191A1090044D326 /* sdk.swift */; };
+		81D430EA219541A900B927A7 /* sdk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81929E982191A1090044D326 /* sdk.swift */; };
+		81D430EB219541AC00B927A7 /* api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81929E9C219316530044D326 /* api.swift */; };
+		81D430EC219541AD00B927A7 /* api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81929E9C219316530044D326 /* api.swift */; };
+		81D430ED219541AE00B927A7 /* api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81929E9C219316530044D326 /* api.swift */; };
+		81D430EE2195426300B927A7 /* JSONDecoder+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D430D821941A2900B927A7 /* JSONDecoder+Extensions.swift */; };
+		81D430EF2195426900B927A7 /* JSONDecoder+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D430D821941A2900B927A7 /* JSONDecoder+Extensions.swift */; };
+		81D430F02195428A00B927A7 /* Wallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81929E90218F37610044D326 /* Wallet.swift */; };
+		81D430F12195428A00B927A7 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81929E92218F49B40044D326 /* Product.swift */; };
+		81D430F22195428A00B927A7 /* Candle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81929E9621919DCA0044D326 /* Candle.swift */; };
+		81D430F32195428A00B927A7 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81929E9A2191A27D0044D326 /* Order.swift */; };
+		81D430F42195428A00B927A7 /* ProductStat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D430DA2194399800B927A7 /* ProductStat.swift */; };
+		81D430F52195428B00B927A7 /* Wallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81929E90218F37610044D326 /* Wallet.swift */; };
+		81D430F62195428B00B927A7 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81929E92218F49B40044D326 /* Product.swift */; };
+		81D430F72195428B00B927A7 /* Candle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81929E9621919DCA0044D326 /* Candle.swift */; };
+		81D430F82195428B00B927A7 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81929E9A2191A27D0044D326 /* Order.swift */; };
+		81D430F92195428C00B927A7 /* Wallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81929E90218F37610044D326 /* Wallet.swift */; };
+		81D430FA2195428C00B927A7 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81929E92218F49B40044D326 /* Product.swift */; };
+		81D430FB2195428C00B927A7 /* Candle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81929E9621919DCA0044D326 /* Candle.swift */; };
+		81D430FC2195428C00B927A7 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81929E9A2191A27D0044D326 /* Order.swift */; };
+		81D430FD2195429400B927A7 /* Info-iOS.plist in Resources */ = {isa = PBXBuildFile; fileRef = 81D4302C2193479D00B927A7 /* Info-iOS.plist */; };
+		81D430FE2195429800B927A7 /* Info-macOS.plist in Resources */ = {isa = PBXBuildFile; fileRef = 81D43048219347F200B927A7 /* Info-macOS.plist */; };
+		81D4310221954C9700B927A7 /* ExampleBot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D4310021954AF800B927A7 /* ExampleBot.swift */; };
+		81D4310321954C9800B927A7 /* ExampleBot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D4310021954AF800B927A7 /* ExampleBot.swift */; };
+		81D4310421954C9900B927A7 /* ExampleBot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D4310021954AF800B927A7 /* ExampleBot.swift */; };
+		87BCD2809CC2D79256F9B036 /* Pods_GolbexSwift_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29E8158C9BC631A9DFD88588 /* Pods_GolbexSwift_iOS.framework */; };
+		B02B93E41DE6759BF1930373 /* Pods_GolbexSDKExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 363DB87FAC728B32F42941C1 /* Pods_GolbexSDKExample.framework */; };
+		FA7414FCD4FDABE660866F8B /* Pods_GolbexSwift_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 479B18FE6182E8E1758E683A /* Pods_GolbexSwift_macOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		81929E6C218F138D0044D326 /* PBXContainerItemProxy */ = {
+		81D430332193479E00B927A7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 81929E58218F138D0044D326 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 81929E60218F138D0044D326;
-			remoteInfo = GolbexSwift;
+			remoteGlobalIDString = 81D430282193479D00B927A7;
+			remoteInfo = "GolbexSwift iOS";
+		};
+		81D4304F219347F200B927A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 81929E58218F138D0044D326 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 81D43044219347F200B927A7;
+			remoteInfo = "GolbexSwift macOS";
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		81D430DF21943FBC00B927A7 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		81929E61218F138D0044D326 /* GolbexSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GolbexSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		81929E64218F138D0044D326 /* GolbexSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GolbexSwift.h; sourceTree = "<group>"; };
-		81929E65218F138D0044D326 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		81929E6A218F138D0044D326 /* GolbexSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GolbexSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		29E8158C9BC631A9DFD88588 /* Pods_GolbexSwift_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GolbexSwift_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BB8AA8FF74F75220943217A /* Pods-GolbexSwift iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GolbexSwift iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-GolbexSwift iOS/Pods-GolbexSwift iOS.release.xcconfig"; sourceTree = "<group>"; };
+		2E0D34D8F6E81939103FC903 /* Pods-GolbexSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GolbexSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-GolbexSwift/Pods-GolbexSwift.release.xcconfig"; sourceTree = "<group>"; };
+		363DB87FAC728B32F42941C1 /* Pods_GolbexSDKExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GolbexSDKExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		479B18FE6182E8E1758E683A /* Pods_GolbexSwift_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GolbexSwift_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D781E7A6AB7BA9B3265BC24 /* Pods-GolbexSwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GolbexSwiftTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GolbexSwiftTests/Pods-GolbexSwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4DDA30FCFC5F41C1DEB9D1DF /* Pods-GolbexSDKExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GolbexSDKExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-GolbexSDKExample/Pods-GolbexSDKExample.release.xcconfig"; sourceTree = "<group>"; };
+		51FAA1F9ACC748D992EA5CC9 /* Pods-GolbexSwiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GolbexSwiftTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GolbexSwiftTests/Pods-GolbexSwiftTests.release.xcconfig"; sourceTree = "<group>"; };
+		58B7FA6BDADFB26351D72D0A /* Pods-GolbexSwift macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GolbexSwift macOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GolbexSwift macOS/Pods-GolbexSwift macOS.debug.xcconfig"; sourceTree = "<group>"; };
+		61360124F757FCF5509CDB52 /* Pods_GolbexSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GolbexSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		647C2A06FE0AA23D5098CDEA /* Pods-GolbexSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GolbexSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GolbexSwift/Pods-GolbexSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		7E101F1EA32AB90542CC598A /* Pods-GolbexSDKExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GolbexSDKExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GolbexSDKExample/Pods-GolbexSDKExample.debug.xcconfig"; sourceTree = "<group>"; };
+		810D41C421997A70004E32CE /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		814BA6D021994A28008C9CE2 /* GolbexError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GolbexError.swift; sourceTree = "<group>"; };
 		81929E6F218F138D0044D326 /* GolbexSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GolbexSwiftTests.swift; sourceTree = "<group>"; };
 		81929E71218F138D0044D326 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81929E90218F37610044D326 /* Wallet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wallet.swift; sourceTree = "<group>"; };
+		81929E92218F49B40044D326 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		81929E9621919DCA0044D326 /* Candle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Candle.swift; sourceTree = "<group>"; };
+		81929E982191A1090044D326 /* sdk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sdk.swift; sourceTree = "<group>"; };
+		81929E9A2191A27D0044D326 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		81929E9C219316530044D326 /* api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = api.swift; sourceTree = "<group>"; };
+		81D430292193479D00B927A7 /* GolbexSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GolbexSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		81D4302B2193479D00B927A7 /* GolbexSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GolbexSwift.h; sourceTree = "<group>"; };
+		81D4302C2193479D00B927A7 /* Info-iOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-iOS.plist"; sourceTree = "<group>"; };
+		81D430312193479E00B927A7 /* GolbexSwift iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GolbexSwift iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		81D430362193479E00B927A7 /* GolbexSwift_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GolbexSwift_iOSTests.swift; sourceTree = "<group>"; };
+		81D430382193479E00B927A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81D43045219347F200B927A7 /* GolbexSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GolbexSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		81D43048219347F200B927A7 /* Info-macOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-macOS.plist"; sourceTree = "<group>"; };
+		81D4304D219347F200B927A7 /* GolbexSwift macOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GolbexSwift macOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		81D43052219347F200B927A7 /* GolbexSwift_macOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GolbexSwift_macOSTests.swift; sourceTree = "<group>"; };
+		81D43054219347F200B927A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81D430D821941A2900B927A7 /* JSONDecoder+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONDecoder+Extensions.swift"; sourceTree = "<group>"; };
+		81D430DA2194399800B927A7 /* ProductStat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductStat.swift; sourceTree = "<group>"; };
+		81D430E121943FBC00B927A7 /* GolbexSDKExample */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = GolbexSDKExample; sourceTree = BUILT_PRODUCTS_DIR; };
+		81D430E321943FBC00B927A7 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		81D4310021954AF800B927A7 /* ExampleBot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleBot.swift; sourceTree = "<group>"; };
+		A7F84CE1B1A56DCE790703C3 /* Pods_GolbexSwiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GolbexSwiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA3F018503E59403AB1EB712 /* Pods-GolbexSwift iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GolbexSwift iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GolbexSwift iOS/Pods-GolbexSwift iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		F84EF5AC8D0660AF3714819A /* Pods-GolbexSwift macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GolbexSwift macOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-GolbexSwift macOS/Pods-GolbexSwift macOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		81929E5E218F138D0044D326 /* Frameworks */ = {
+		81D430262193479D00B927A7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87BCD2809CC2D79256F9B036 /* Pods_GolbexSwift_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		81929E67218F138D0044D326 /* Frameworks */ = {
+		81D4302E2193479E00B927A7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81929E6B218F138D0044D326 /* GolbexSwift.framework in Frameworks */,
+				81D430322193479E00B927A7 /* GolbexSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81D43042219347F200B927A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA7414FCD4FDABE660866F8B /* Pods_GolbexSwift_macOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81D4304A219347F200B927A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81D4304E219347F200B927A7 /* GolbexSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81D430DE21943FBC00B927A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B02B93E41DE6759BF1930373 /* Pods_GolbexSDKExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,28 +171,31 @@
 		81929E57218F138D0044D326 = {
 			isa = PBXGroup;
 			children = (
-				81929E63218F138D0044D326 /* GolbexSwift */,
+				810D41C421997A70004E32CE /* Package.swift */,
+				81D430FF21954AD200B927A7 /* Examples */,
+				81929E8F218F35B40044D326 /* Sources */,
 				81929E6E218F138D0044D326 /* GolbexSwiftTests */,
+				81D4302A2193479D00B927A7 /* GolbexSwift iOS */,
+				81D430352193479E00B927A7 /* GolbexSwift iOSTests */,
+				81D43046219347F200B927A7 /* GolbexSwift macOS */,
+				81D43051219347F200B927A7 /* GolbexSwift macOSTests */,
+				81D430E221943FBC00B927A7 /* GolbexSDKExample */,
 				81929E62218F138D0044D326 /* Products */,
+				C6FE36ABD6E41DE067FEE83B /* Pods */,
+				EEF3ECAD702DEDE18B3D69CC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		81929E62218F138D0044D326 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				81929E61218F138D0044D326 /* GolbexSwift.framework */,
-				81929E6A218F138D0044D326 /* GolbexSwiftTests.xctest */,
+				81D430292193479D00B927A7 /* GolbexSwift.framework */,
+				81D430312193479E00B927A7 /* GolbexSwift iOSTests.xctest */,
+				81D43045219347F200B927A7 /* GolbexSwift.framework */,
+				81D4304D219347F200B927A7 /* GolbexSwift macOSTests.xctest */,
+				81D430E121943FBC00B927A7 /* GolbexSDKExample */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		81929E63218F138D0044D326 /* GolbexSwift */ = {
-			isa = PBXGroup;
-			children = (
-				81929E64218F138D0044D326 /* GolbexSwift.h */,
-				81929E65218F138D0044D326 /* Info.plist */,
-			);
-			path = GolbexSwift;
 			sourceTree = "<group>";
 		};
 		81929E6E218F138D0044D326 /* GolbexSwiftTests */ = {
@@ -86,55 +207,231 @@
 			path = GolbexSwiftTests;
 			sourceTree = "<group>";
 		};
+		81929E8E218F35700044D326 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				81929E90218F37610044D326 /* Wallet.swift */,
+				81929E92218F49B40044D326 /* Product.swift */,
+				81929E9621919DCA0044D326 /* Candle.swift */,
+				81929E9A2191A27D0044D326 /* Order.swift */,
+				81D430DA2194399800B927A7 /* ProductStat.swift */,
+				814BA6D021994A28008C9CE2 /* GolbexError.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		81929E8F218F35B40044D326 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				81D430D721941A0D00B927A7 /* Extensions */,
+				81D4302B2193479D00B927A7 /* GolbexSwift.h */,
+				81D4302C2193479D00B927A7 /* Info-iOS.plist */,
+				81D43048219347F200B927A7 /* Info-macOS.plist */,
+				81929E8E218F35700044D326 /* Models */,
+				81929E982191A1090044D326 /* sdk.swift */,
+				81929E9C219316530044D326 /* api.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		81D4302A2193479D00B927A7 /* GolbexSwift iOS */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "GolbexSwift iOS";
+			sourceTree = "<group>";
+		};
+		81D430352193479E00B927A7 /* GolbexSwift iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				81D430362193479E00B927A7 /* GolbexSwift_iOSTests.swift */,
+				81D430382193479E00B927A7 /* Info.plist */,
+			);
+			path = "GolbexSwift iOSTests";
+			sourceTree = "<group>";
+		};
+		81D43046219347F200B927A7 /* GolbexSwift macOS */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "GolbexSwift macOS";
+			sourceTree = "<group>";
+		};
+		81D43051219347F200B927A7 /* GolbexSwift macOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				81D43052219347F200B927A7 /* GolbexSwift_macOSTests.swift */,
+				81D43054219347F200B927A7 /* Info.plist */,
+			);
+			path = "GolbexSwift macOSTests";
+			sourceTree = "<group>";
+		};
+		81D430D721941A0D00B927A7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				81D430D821941A2900B927A7 /* JSONDecoder+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		81D430E221943FBC00B927A7 /* GolbexSDKExample */ = {
+			isa = PBXGroup;
+			children = (
+				81D430E321943FBC00B927A7 /* main.swift */,
+			);
+			path = GolbexSDKExample;
+			sourceTree = "<group>";
+		};
+		81D430FF21954AD200B927A7 /* Examples */ = {
+			isa = PBXGroup;
+			children = (
+				81D4310021954AF800B927A7 /* ExampleBot.swift */,
+			);
+			path = Examples;
+			sourceTree = "<group>";
+		};
+		C6FE36ABD6E41DE067FEE83B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				647C2A06FE0AA23D5098CDEA /* Pods-GolbexSwift.debug.xcconfig */,
+				2E0D34D8F6E81939103FC903 /* Pods-GolbexSwift.release.xcconfig */,
+				4D781E7A6AB7BA9B3265BC24 /* Pods-GolbexSwiftTests.debug.xcconfig */,
+				51FAA1F9ACC748D992EA5CC9 /* Pods-GolbexSwiftTests.release.xcconfig */,
+				DA3F018503E59403AB1EB712 /* Pods-GolbexSwift iOS.debug.xcconfig */,
+				2BB8AA8FF74F75220943217A /* Pods-GolbexSwift iOS.release.xcconfig */,
+				58B7FA6BDADFB26351D72D0A /* Pods-GolbexSwift macOS.debug.xcconfig */,
+				F84EF5AC8D0660AF3714819A /* Pods-GolbexSwift macOS.release.xcconfig */,
+				7E101F1EA32AB90542CC598A /* Pods-GolbexSDKExample.debug.xcconfig */,
+				4DDA30FCFC5F41C1DEB9D1DF /* Pods-GolbexSDKExample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EEF3ECAD702DEDE18B3D69CC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				61360124F757FCF5509CDB52 /* Pods_GolbexSwift.framework */,
+				A7F84CE1B1A56DCE790703C3 /* Pods_GolbexSwiftTests.framework */,
+				29E8158C9BC631A9DFD88588 /* Pods_GolbexSwift_iOS.framework */,
+				479B18FE6182E8E1758E683A /* Pods_GolbexSwift_macOS.framework */,
+				363DB87FAC728B32F42941C1 /* Pods_GolbexSDKExample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		81929E5C218F138D0044D326 /* Headers */ = {
+		81D430242193479D00B927A7 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81929E72218F138D0044D326 /* GolbexSwift.h in Headers */,
+				81D430392193479E00B927A7 /* GolbexSwift.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81D43040219347F200B927A7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81D4305C219351CD00B927A7 /* GolbexSwift.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		81929E60218F138D0044D326 /* GolbexSwift */ = {
+		81D430282193479D00B927A7 /* GolbexSwift iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 81929E75218F138D0044D326 /* Build configuration list for PBXNativeTarget "GolbexSwift" */;
+			buildConfigurationList = 81D4303E2193479E00B927A7 /* Build configuration list for PBXNativeTarget "GolbexSwift iOS" */;
 			buildPhases = (
-				81929E5C218F138D0044D326 /* Headers */,
-				81929E5D218F138D0044D326 /* Sources */,
-				81929E5E218F138D0044D326 /* Frameworks */,
-				81929E5F218F138D0044D326 /* Resources */,
+				10F4DE7E2AEAF405936308A9 /* [CP] Check Pods Manifest.lock */,
+				81D430242193479D00B927A7 /* Headers */,
+				81D430252193479D00B927A7 /* Sources */,
+				81D430262193479D00B927A7 /* Frameworks */,
+				81D430272193479D00B927A7 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = GolbexSwift;
-			productName = GolbexSwift;
-			productReference = 81929E61218F138D0044D326 /* GolbexSwift.framework */;
+			name = "GolbexSwift iOS";
+			productName = "GolbexSwift iOS";
+			productReference = 81D430292193479D00B927A7 /* GolbexSwift.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		81929E69218F138D0044D326 /* GolbexSwiftTests */ = {
+		81D430302193479E00B927A7 /* GolbexSwift iOSTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 81929E78218F138D0044D326 /* Build configuration list for PBXNativeTarget "GolbexSwiftTests" */;
+			buildConfigurationList = 81D4303F2193479E00B927A7 /* Build configuration list for PBXNativeTarget "GolbexSwift iOSTests" */;
 			buildPhases = (
-				81929E66218F138D0044D326 /* Sources */,
-				81929E67218F138D0044D326 /* Frameworks */,
-				81929E68218F138D0044D326 /* Resources */,
+				81D4302D2193479E00B927A7 /* Sources */,
+				81D4302E2193479E00B927A7 /* Frameworks */,
+				81D4302F2193479E00B927A7 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				81929E6D218F138D0044D326 /* PBXTargetDependency */,
+				81D430342193479E00B927A7 /* PBXTargetDependency */,
 			);
-			name = GolbexSwiftTests;
-			productName = GolbexSwiftTests;
-			productReference = 81929E6A218F138D0044D326 /* GolbexSwiftTests.xctest */;
+			name = "GolbexSwift iOSTests";
+			productName = "GolbexSwift iOSTests";
+			productReference = 81D430312193479E00B927A7 /* GolbexSwift iOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		81D43044219347F200B927A7 /* GolbexSwift macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 81D43056219347F200B927A7 /* Build configuration list for PBXNativeTarget "GolbexSwift macOS" */;
+			buildPhases = (
+				6D2493A44131E75D891B3E77 /* [CP] Check Pods Manifest.lock */,
+				81D43040219347F200B927A7 /* Headers */,
+				81D43041219347F200B927A7 /* Sources */,
+				81D43042219347F200B927A7 /* Frameworks */,
+				81D43043219347F200B927A7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "GolbexSwift macOS";
+			productName = "GolbexSwift macOS";
+			productReference = 81D43045219347F200B927A7 /* GolbexSwift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		81D4304C219347F200B927A7 /* GolbexSwift macOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 81D43059219347F200B927A7 /* Build configuration list for PBXNativeTarget "GolbexSwift macOSTests" */;
+			buildPhases = (
+				81D43049219347F200B927A7 /* Sources */,
+				81D4304A219347F200B927A7 /* Frameworks */,
+				81D4304B219347F200B927A7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				81D43050219347F200B927A7 /* PBXTargetDependency */,
+			);
+			name = "GolbexSwift macOSTests";
+			productName = "GolbexSwift macOSTests";
+			productReference = 81D4304D219347F200B927A7 /* GolbexSwift macOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		81D430E021943FBC00B927A7 /* GolbexSDKExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 81D430E521943FBC00B927A7 /* Build configuration list for PBXNativeTarget "GolbexSDKExample" */;
+			buildPhases = (
+				60570D60CEB16DF6E97ECD2D /* [CP] Check Pods Manifest.lock */,
+				81D430DD21943FBC00B927A7 /* Sources */,
+				81D430DE21943FBC00B927A7 /* Frameworks */,
+				81D430DF21943FBC00B927A7 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GolbexSDKExample;
+			productName = GolbexSDKExample;
+			productReference = 81D430E121943FBC00B927A7 /* GolbexSDKExample */;
+			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
@@ -145,10 +442,20 @@
 				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1010;
 				TargetAttributes = {
-					81929E60218F138D0044D326 = {
+					81D430282193479D00B927A7 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+					};
+					81D430302193479E00B927A7 = {
 						CreatedOnToolsVersion = 10.1;
 					};
-					81929E69218F138D0044D326 = {
+					81D43044219347F200B927A7 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					81D4304C219347F200B927A7 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					81D430E021943FBC00B927A7 = {
 						CreatedOnToolsVersion = 10.1;
 					};
 				};
@@ -165,21 +472,40 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				81929E60218F138D0044D326 /* GolbexSwift */,
-				81929E69218F138D0044D326 /* GolbexSwiftTests */,
+				81D430282193479D00B927A7 /* GolbexSwift iOS */,
+				81D430302193479E00B927A7 /* GolbexSwift iOSTests */,
+				81D43044219347F200B927A7 /* GolbexSwift macOS */,
+				81D4304C219347F200B927A7 /* GolbexSwift macOSTests */,
+				81D430E021943FBC00B927A7 /* GolbexSDKExample */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		81929E5F218F138D0044D326 /* Resources */ = {
+		81D430272193479D00B927A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81D430FD2195429400B927A7 /* Info-iOS.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81D4302F2193479E00B927A7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		81929E68218F138D0044D326 /* Resources */ = {
+		81D43043219347F200B927A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81D430FE2195429800B927A7 /* Info-macOS.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81D4304B219347F200B927A7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -188,29 +514,144 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXSourcesBuildPhase section */
-		81929E5D218F138D0044D326 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
+/* Begin PBXShellScriptBuildPhase section */
+		10F4DE7E2AEAF405936308A9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GolbexSwift iOS-checkManifestLockResult.txt",
+			);
 			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
 		};
-		81929E66218F138D0044D326 /* Sources */ = {
+		60570D60CEB16DF6E97ECD2D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GolbexSDKExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D2493A44131E75D891B3E77 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GolbexSwift macOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		81D430252193479D00B927A7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81929E70218F138D0044D326 /* GolbexSwiftTests.swift in Sources */,
+				81D430F92195428C00B927A7 /* Wallet.swift in Sources */,
+				81D430D921941A2900B927A7 /* JSONDecoder+Extensions.swift in Sources */,
+				81D430FC2195428C00B927A7 /* Order.swift in Sources */,
+				81D430FB2195428C00B927A7 /* Candle.swift in Sources */,
+				81D430DB2194399800B927A7 /* ProductStat.swift in Sources */,
+				81D430ED219541AE00B927A7 /* api.swift in Sources */,
+				81D4310421954C9900B927A7 /* ExampleBot.swift in Sources */,
+				814BA6D121994A28008C9CE2 /* GolbexError.swift in Sources */,
+				81D430E8219541A700B927A7 /* sdk.swift in Sources */,
+				81D430FA2195428C00B927A7 /* Product.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81D4302D2193479E00B927A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81D430372193479E00B927A7 /* GolbexSwift_iOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81D43041219347F200B927A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81D430F52195428B00B927A7 /* Wallet.swift in Sources */,
+				81D430E9219541A800B927A7 /* sdk.swift in Sources */,
+				81D430F82195428B00B927A7 /* Order.swift in Sources */,
+				81D430F72195428B00B927A7 /* Candle.swift in Sources */,
+				81D430EC219541AD00B927A7 /* api.swift in Sources */,
+				81D430EE2195426300B927A7 /* JSONDecoder+Extensions.swift in Sources */,
+				81D4310321954C9800B927A7 /* ExampleBot.swift in Sources */,
+				8137487E21994E0C000F7C5C /* GolbexError.swift in Sources */,
+				81D430DC219439E600B927A7 /* ProductStat.swift in Sources */,
+				81D430F62195428B00B927A7 /* Product.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81D43049219347F200B927A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81D43053219347F200B927A7 /* GolbexSwift_macOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81D430DD21943FBC00B927A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81D430F02195428A00B927A7 /* Wallet.swift in Sources */,
+				81D430EA219541A900B927A7 /* sdk.swift in Sources */,
+				81D430F32195428A00B927A7 /* Order.swift in Sources */,
+				81D430F42195428A00B927A7 /* ProductStat.swift in Sources */,
+				81D430F22195428A00B927A7 /* Candle.swift in Sources */,
+				81D430EB219541AC00B927A7 /* api.swift in Sources */,
+				81D430EF2195426900B927A7 /* JSONDecoder+Extensions.swift in Sources */,
+				81D430E421943FBC00B927A7 /* main.swift in Sources */,
+				8137487F21994E18000F7C5C /* GolbexError.swift in Sources */,
+				81D4310221954C9700B927A7 /* ExampleBot.swift in Sources */,
+				81D430F12195428A00B927A7 /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		81929E6D218F138D0044D326 /* PBXTargetDependency */ = {
+		81D430342193479E00B927A7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 81929E60218F138D0044D326 /* GolbexSwift */;
-			targetProxy = 81929E6C218F138D0044D326 /* PBXContainerItemProxy */;
+			target = 81D430282193479D00B927A7 /* GolbexSwift iOS */;
+			targetProxy = 81D430332193479E00B927A7 /* PBXContainerItemProxy */;
+		};
+		81D43050219347F200B927A7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 81D43044219347F200B927A7 /* GolbexSwift macOS */;
+			targetProxy = 81D4304F219347F200B927A7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -268,6 +709,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -326,6 +768,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -337,85 +780,228 @@
 			};
 			name = Release;
 		};
-		81929E76218F138D0044D326 /* Debug */ = {
+		81D4303A2193479E00B927A7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA3F018503E59403AB1EB712 /* Pods-GolbexSwift iOS.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = GolbexSwift/Info.plist;
+				INFOPLIST_FILE = "Sources/info-iOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
-					"@executable_path/Frameworks",
+					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ru.ndolgopolov.GolbexSwift;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.ndolgopolov.GolbexSwift-iOS";
+				PRODUCT_MODULE_NAME = GolbexSwift;
+				PRODUCT_NAME = GolbexSwift;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		81929E77218F138D0044D326 /* Release */ = {
+		81D4303B2193479E00B927A7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2BB8AA8FF74F75220943217A /* Pods-GolbexSwift iOS.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = GolbexSwift/Info.plist;
+				INFOPLIST_FILE = "Sources/info-iOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
-					"@executable_path/Frameworks",
+					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ru.ndolgopolov.GolbexSwift;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.ndolgopolov.GolbexSwift-iOS";
+				PRODUCT_MODULE_NAME = GolbexSwift;
+				PRODUCT_NAME = GolbexSwift;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
-		81929E79218F138D0044D326 /* Debug */ = {
+		81D4303C2193479E00B927A7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = GolbexSwiftTests/Info.plist;
+				INFOPLIST_FILE = "GolbexSwift iOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ru.ndolgopolov.GolbexSwiftTests;
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.ndolgopolov.GolbexSwift-iOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		81929E7A218F138D0044D326 /* Release */ = {
+		81D4303D2193479E00B927A7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = GolbexSwiftTests/Info.plist;
+				INFOPLIST_FILE = "GolbexSwift iOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ru.ndolgopolov.GolbexSwiftTests;
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.ndolgopolov.GolbexSwift-iOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		81D43057219347F200B927A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58B7FA6BDADFB26351D72D0A /* Pods-GolbexSwift macOS.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = SXC3299ASD;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Sources/info-macOS.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+					"@executable_path/Alamofire/",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.ndolgopolov.GolbexSwift-macOS";
+				PRODUCT_MODULE_NAME = GolbexSwift;
+				PRODUCT_NAME = GolbexSwift;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		81D43058219347F200B927A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F84EF5AC8D0660AF3714819A /* Pods-GolbexSwift macOS.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = SXC3299ASD;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Sources/info-macOS.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+					"@executable_path/Alamofire/",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.ndolgopolov.GolbexSwift-macOS";
+				PRODUCT_MODULE_NAME = GolbexSwift;
+				PRODUCT_NAME = GolbexSwift;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		81D4305A219347F200B927A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "GolbexSwift macOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.ndolgopolov.GolbexSwift-macOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		81D4305B219347F200B927A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "GolbexSwift macOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.ndolgopolov.GolbexSwift-macOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		81D430E621943FBC00B927A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E101F1EA32AB90542CC598A /* Pods-GolbexSDKExample.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SXC3299ASD;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		81D430E721943FBC00B927A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DDA30FCFC5F41C1DEB9D1DF /* Pods-GolbexSDKExample.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SXC3299ASD;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
@@ -431,20 +1017,47 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		81929E75218F138D0044D326 /* Build configuration list for PBXNativeTarget "GolbexSwift" */ = {
+		81D4303E2193479E00B927A7 /* Build configuration list for PBXNativeTarget "GolbexSwift iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				81929E76218F138D0044D326 /* Debug */,
-				81929E77218F138D0044D326 /* Release */,
+				81D4303A2193479E00B927A7 /* Debug */,
+				81D4303B2193479E00B927A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		81929E78218F138D0044D326 /* Build configuration list for PBXNativeTarget "GolbexSwiftTests" */ = {
+		81D4303F2193479E00B927A7 /* Build configuration list for PBXNativeTarget "GolbexSwift iOSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				81929E79218F138D0044D326 /* Debug */,
-				81929E7A218F138D0044D326 /* Release */,
+				81D4303C2193479E00B927A7 /* Debug */,
+				81D4303D2193479E00B927A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		81D43056219347F200B927A7 /* Build configuration list for PBXNativeTarget "GolbexSwift macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81D43057219347F200B927A7 /* Debug */,
+				81D43058219347F200B927A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		81D43059219347F200B927A7 /* Build configuration list for PBXNativeTarget "GolbexSwift macOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81D4305A219347F200B927A7 /* Debug */,
+				81D4305B219347F200B927A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		81D430E521943FBC00B927A7 /* Build configuration list for PBXNativeTarget "GolbexSDKExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81D430E621943FBC00B927A7 /* Debug */,
+				81D430E721943FBC00B927A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
