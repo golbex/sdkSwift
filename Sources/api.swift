@@ -102,15 +102,26 @@ class Api{
         var stat = ProductStat()
         
         let r = Alamofire.request(URL.init(string: "/stat/\(product)", relativeTo: tradeApiUrl!)!)
-            .responseData()
+            .responseJSON()
                 
             switch r.result {
-            case .success( _):
-                
-                let s:Result<ProductStat> = JSONDecoder().decodeResponse(from: r)
-                if let result = s.value{
-                    stat = result
+            case .success(let value):
+                if let JSON = value as? [String: Any]{
+                    
+                    if let dict = JSON["ticker"] as? [AnyHashable : Any]{
+                        stat = ProductStat.init(dict:dict)
+                    }
+                    
+                    
+//                    for wallet in JSON{
+//                        let w = Wallet.init(dict:wallet)
+//                        wallets.append(w)
+//                    }
                 }
+//                let s:Result<ProductStat> = JSONDecoder().decodeResponse(from: r)
+//                if let result = s.value{
+//                    stat = result
+//                }
             case .failure(let error):
                 print("Request failed with error: \(error)")
                 }

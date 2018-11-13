@@ -57,14 +57,6 @@ public struct GolbexSDK{
         return stat
     }
 //
-
-    
-    public func saytoken(){
-        print("token: \(self.token)")
-    }
-    
-
-    
     
     public func addOrer(type:String, side:String, product:String, price:Double, size:Double) -> (order:Order, err:GolbexError?){
         
