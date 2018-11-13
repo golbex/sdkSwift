@@ -12,7 +12,7 @@ public class ExampleBot:NSObject{
     var stopped = false
     
     public func start(token:String){
-        let sdk = GolbexSDK.init(token: "9918a455-2c3f-4e87-be85-7ffb6916745b")
+        let sdk = GolbexSDK.init(token: token)
         
         var productList:[Product] = [] {
             didSet{
@@ -50,10 +50,12 @@ public class ExampleBot:NSObject{
                     if size > currentProduct.max {
                         size = currentProduct.max
                     }
-                    let price = stat.Price + 1 * (Double.random(in: 0...2)) * currentProduct.increment
+                    let price = stat.price + 1 * (Double.random(in: 0...2)) * currentProduct.increment
                     
-                    sdk.addOrer(type: "limit", side: currentWallet.type == "crypto" ? "sell":"buy", product: currentProduct.uid, price: price, size: size)
-                    
+                    let result = sdk.addOrer(type: "limit", side: currentWallet.type == "crypto" ? "sell":"buy", product: currentProduct.uid, price: price, size: size)
+                    if let err = result.err{
+                        print(err)
+                    }
                 }
             }
             sleep(5)

@@ -11,7 +11,7 @@ public class ProductStat:NSObject{
     public var ask = 0.0
     public var bid = 0.0
     public var price = 0.0
-    public var lastTradeId = 0
+    public var lastTradeId = ""
 //    public var vol24 = 0
     
     public override init() {
@@ -23,6 +23,6 @@ public class ProductStat:NSObject{
         self.ask = dict["ask"] as! Double
         self.bid = dict["bid"] as! Double
         self.price = dict["price"] as! Double
-        self.lastTradeId = dict["trade_id"] as! Int
+        self.lastTradeId = dict["trade_id"] as! String
     }
 }

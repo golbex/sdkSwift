@@ -9,7 +9,7 @@ import Foundation
 
 public class GolbexError:Codable{
     
-    public var code = ""
+    public var code = 0
     public var msg = ""
     
 }

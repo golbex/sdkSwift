@@ -223,6 +223,9 @@ class Api{
             let o:Result<Order> = JSONDecoder().decodeResponse(from: r)
             if let result = o.value{
                 order = result
+            } else {
+                let err:Result<GolbexError> = JSONDecoder().decodeResponse(from: r)
+                return (order, err.value)
             }
         case .failure(let error):
             print("Request failed with error: \(error)")
