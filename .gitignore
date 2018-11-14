@@ -2,5 +2,7 @@
 /.build
 /Packages
 /*.xcodeproj
+*.xcworkspacedata
 Pods/*
 Examples/GolbexSDK-Example-iOS/Pods/*
+Examples/GolbexSDK-Example-macOS/Pods/*

@@ -48,7 +48,6 @@
 		81D4310421954C9900B927A7 /* ExampleBot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D4310021954AF800B927A7 /* ExampleBot.swift */; };
 		87BCD2809CC2D79256F9B036 /* Pods_GolbexSwift_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29E8158C9BC631A9DFD88588 /* Pods_GolbexSwift_iOS.framework */; };
 		B02B93E41DE6759BF1930373 /* Pods_GolbexSDKExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 363DB87FAC728B32F42941C1 /* Pods_GolbexSDKExample.framework */; };
-		FA7414FCD4FDABE660866F8B /* Pods_GolbexSwift_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 479B18FE6182E8E1758E683A /* Pods_GolbexSwift_macOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +93,12 @@
 		647C2A06FE0AA23D5098CDEA /* Pods-GolbexSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GolbexSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GolbexSwift/Pods-GolbexSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		7E101F1EA32AB90542CC598A /* Pods-GolbexSDKExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GolbexSDKExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GolbexSDKExample/Pods-GolbexSDKExample.debug.xcconfig"; sourceTree = "<group>"; };
 		810D41C421997A70004E32CE /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		810D4210219ADD7F004E32CE /* Alamofire_Synchronous.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire_Synchronous.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		810D4212219ADD89004E32CE /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		810D4214219ADD91004E32CE /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		810D4219219AE2DA004E32CE /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		810D421B219AE2E3004E32CE /* Alamofire_Synchronous.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire_Synchronous.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		810D421D219AE2E8004E32CE /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		814BA6D021994A28008C9CE2 /* GolbexError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GolbexError.swift; sourceTree = "<group>"; };
 		81929E6F218F138D0044D326 /* GolbexSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GolbexSwiftTests.swift; sourceTree = "<group>"; };
 		81929E71218F138D0044D326 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -119,6 +124,7 @@
 		81D430E121943FBC00B927A7 /* GolbexSDKExample */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = GolbexSDKExample; sourceTree = BUILT_PRODUCTS_DIR; };
 		81D430E321943FBC00B927A7 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		81D4310021954AF800B927A7 /* ExampleBot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleBot.swift; sourceTree = "<group>"; };
+		9656100ACDDF6D169382F41E /* libPods-GolbexSwift macOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GolbexSwift macOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7F84CE1B1A56DCE790703C3 /* Pods_GolbexSwiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GolbexSwiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA3F018503E59403AB1EB712 /* Pods-GolbexSwift iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GolbexSwift iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GolbexSwift iOS/Pods-GolbexSwift iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		F84EF5AC8D0660AF3714819A /* Pods-GolbexSwift macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GolbexSwift macOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-GolbexSwift macOS/Pods-GolbexSwift macOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -145,7 +151,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA7414FCD4FDABE660866F8B /* Pods_GolbexSwift_macOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,11 +315,18 @@
 		EEF3ECAD702DEDE18B3D69CC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				810D421D219AE2E8004E32CE /* SwiftyJSON.framework */,
+				810D421B219AE2E3004E32CE /* Alamofire_Synchronous.framework */,
+				810D4219219AE2DA004E32CE /* Alamofire.framework */,
+				810D4214219ADD91004E32CE /* SwiftyJSON.framework */,
+				810D4212219ADD89004E32CE /* Alamofire.framework */,
+				810D4210219ADD7F004E32CE /* Alamofire_Synchronous.framework */,
 				61360124F757FCF5509CDB52 /* Pods_GolbexSwift.framework */,
 				A7F84CE1B1A56DCE790703C3 /* Pods_GolbexSwiftTests.framework */,
 				29E8158C9BC631A9DFD88588 /* Pods_GolbexSwift_iOS.framework */,
 				479B18FE6182E8E1758E683A /* Pods_GolbexSwift_macOS.framework */,
 				363DB87FAC728B32F42941C1 /* Pods_GolbexSDKExample.framework */,
+				9656100ACDDF6D169382F41E /* libPods-GolbexSwift macOS.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -875,11 +887,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 58B7FA6BDADFB26351D72D0A /* Pods-GolbexSwift macOS.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = SXC3299ASD;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -906,11 +919,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F84EF5AC8D0660AF3714819A /* Pods-GolbexSwift macOS.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = SXC3299ASD;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";

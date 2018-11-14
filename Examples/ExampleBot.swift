@@ -16,18 +16,25 @@ public class ExampleBot:NSObject{
         
         var productList:[Product] = [] {
             didSet{
-                print("Product list updated")
+                print("\(token): Product list updated")
             }
         }
         var wallets:[Wallet] = [] {
             didSet{
-                print("Wallets updated")
+                print("\(token): Wallets updated")
             }
         }
-        print("Load product list...")
+        print("\(token): Load product list...")
         productList = sdk.productsList()
-        print("Load wallet list...")
-        wallets = sdk.walletsList()
+        print("\(token): Load wallet list...")
+        let w = sdk.walletsList()
+        if let err = w.err{
+            print("\(token): \(err.msg)")
+            stopped = true
+        } else {
+            wallets = w.wallets
+        }
+        
         
         while stopped != true {
             if let currentWallet = wallets.sorted(by: {($0.value > $1.value)}).first{
@@ -54,7 +61,7 @@ public class ExampleBot:NSObject{
                     
                     let result = sdk.addOrer(type: "limit", side: currentWallet.type == "crypto" ? "sell":"buy", product: currentProduct.uid, price: price, size: size)
                     if let err = result.err{
-                        print(err.msg)
+                        print("\(token): \(err.msg)")
                     }
                 }
             }

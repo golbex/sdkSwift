@@ -131,7 +131,7 @@ class Api{
     
     
     
-    func getWallets() -> [Wallet] {
+    func getWallets() -> (wallets:[Wallet], err:GolbexError?){
 
         var wallets:[Wallet] = []
 
@@ -145,11 +145,18 @@ class Api{
                         let w = Wallet.init(dict:wallet)
                         wallets.append(w)
                     }
+                } else {
+                    if let JSON = value as? [String : Any] {
+                        let err = GolbexError.init()
+                        err.code = JSON["code"] as! Int
+                        err.msg = JSON["msg"] as! String
+                        return (wallets, err)
+                    }
                 }
             case .failure(let error):
                 print("Request failed with error: \(error)")
                 }
-        return wallets
+        return (wallets, nil)
     }
     
     func getOpenOrders() -> [Order] {

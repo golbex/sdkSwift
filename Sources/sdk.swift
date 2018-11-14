@@ -31,9 +31,9 @@ public struct GolbexSDK{
         return list
     }
 
-    public func walletsList() -> [Wallet] {
-        let list = api.getWallets()
-        return list
+    public func walletsList() -> (wallets:[Wallet], err:GolbexError?){
+        let result = api.getWallets()
+        return result
     }
 //
 //    func openOrders() -> [Order] {
@@ -62,6 +62,6 @@ public struct GolbexSDK{
         
         let result = api.addOrder(type:type, side:side, product:product, price:price, size:size)
         
-        return (result.order, result.err)
+        return result
     }
 }
